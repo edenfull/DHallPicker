@@ -1,0 +1,52 @@
+﻿@using DHallPicker.Models.Models
+@model DHallPicker.Models.DietWrapper
+
+@{
+    ViewBag.Title = "Select Filters";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container allmenus-container">
+    <h2>Select Filters</h2>
+    @using (Html.BeginForm("SelectFilters", "Picker", FormMethod.Post, new { id = "filter-form" }))
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Preference</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Diet filter in Model.AllFilters)
+                {
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="diets" value="@filter.DishFilterID"/></td>
+                        <td>@filter.FilterName</td>
+                        <td>@filter.FilterDescription</td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+        <input type="submit" value="Pick a Dining Hall!" class="btn btn-primary" />
+    }
+</div>
+
+@section ViewScripts
+{
+    <script>
+        function onSubmit() {
+            var fields = $("input[name='diets']").serializeArray();
+            
+            if (fields.length == 0) {
+                alert('Please select at least one filter.');
+                return false;
+            }
+        }
+
+        $('#filter-form').submit(onSubmit);
+    </script>
+}

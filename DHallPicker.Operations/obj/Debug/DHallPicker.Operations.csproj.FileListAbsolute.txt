@@ -1,0 +1,15 @@
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\DHallPicker.Operations.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\DHallPicker.Operations.pdb
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\Dapper.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\DHallPicker.Data.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\DHallPicker.Models.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\HtmlAgilityPack.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\DHallPicker.Data.pdb
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\DHallPicker.Models.pdb
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\Dapper.pdb
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\Dapper.xml
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\bin\Debug\HtmlAgilityPack.xml
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\obj\Debug\DHallPicker.Operations.csprojResolveAssemblyReference.cache
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\obj\Debug\DHallPicker.Operations.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Operations\obj\Debug\DHallPicker.Operations.pdb

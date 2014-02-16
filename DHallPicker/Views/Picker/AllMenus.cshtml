@@ -1,0 +1,90 @@
+﻿@model DHallPicker.Models.Models.DiningHallLookupResult
+
+@using DHallPicker.Models.Models
+
+@{
+    ViewBag.Title = "All Menus";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container allmenus-container">
+    <div class="row">
+        <div class="col-lg-4">
+            <h3 class="meal">Breakfast</h3>
+            <div class="panel-group" id="accordion" data-collapse-type="manual">
+                <div class="panel panel-default">
+                    @foreach (DiningHall dHall in Model.MenuData)
+                    {
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                @Html.Raw("<a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse" + @dHall.DiningHallID + "\">")
+                                @dHall.DiningHallName
+                                @Html.Raw("</a>")
+                            </h4>
+                        </div>
+                        @Html.Raw("<div id=\"collapse" + @dHall.DiningHallID + "\" class=\"panel-collapse collapse in\">")
+                        <div class="panel-body">
+                            @foreach (Dish currentDish in dHall.Breakfast)
+                            {
+                                <div>@currentDish.DishName</div>
+                            }
+                        </div>
+                        @Html.Raw("</div>")
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <h3 class="meal">Lunch</h3>
+            <div class="panel-group" id="accordion2" data-collapse-type="manual">
+                <div class="panel panel-default">
+                    @foreach (DiningHall dHall in Model.MenuData)
+                    {
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                @Html.Raw("<a data-toggle=\"collapse\" data-parent=\"#accordion2\" href=\"#2collapse" + @dHall.DiningHallID + "\">")
+                                @dHall.DiningHallName
+                                @Html.Raw("</a>")
+                            </h4>
+                        </div>
+                        @Html.Raw("<div id=\"2collapse" + @dHall.DiningHallID + "\" class=\"panel-collapse collapse in\">")
+                        <div class="panel-body">
+                            @foreach (Dish currentDish in dHall.Lunch)
+                            {
+                                <div>@currentDish.DishName</div>
+                            }
+                        </div>
+                        @Html.Raw("</div>")
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <h3 class="meal">Dinner</h3>
+            <div class="panel-group" id="accordion3" data-collapse-type="manual">
+                <div class="panel panel-default">
+                    @foreach (DiningHall dHall in Model.MenuData)
+                    {
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                @Html.Raw("<a data-toggle=\"collapse\" data-parent=\"#accordion3\" href=\"#3collapse" + @dHall.DiningHallID + "\">")
+                                @dHall.DiningHallName
+                                @Html.Raw("</a>")
+                            </h4>
+                        </div>
+                        @Html.Raw("<div id=\"3collapse" + @dHall.DiningHallID + "\" class=\"panel-collapse collapse in\">")
+                        <div class="panel-body">
+                            @foreach (Dish currentDish in dHall.Dinner)
+                            {
+                                <div>@currentDish.DishName</div>
+                            }
+                        </div>
+                        @Html.Raw("</div>")
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

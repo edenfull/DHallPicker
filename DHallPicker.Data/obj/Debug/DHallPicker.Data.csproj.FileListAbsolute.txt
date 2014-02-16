@@ -1,0 +1,10 @@
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Data\bin\Debug\DHallPicker.Data.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Data\bin\Debug\DHallPicker.Data.pdb
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Data\bin\Debug\Dapper.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Data\bin\Debug\DHallPicker.Models.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Data\bin\Debug\DHallPicker.Models.pdb
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Data\bin\Debug\Dapper.pdb
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Data\bin\Debug\Dapper.xml
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Data\obj\Debug\DHallPicker.Data.csprojResolveAssemblyReference.cache
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Data\obj\Debug\DHallPicker.Data.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Data\obj\Debug\DHallPicker.Data.pdb

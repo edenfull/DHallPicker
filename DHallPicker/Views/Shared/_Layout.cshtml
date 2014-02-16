@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("DHall Picker", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="main">@Html.ActionLink("Filter Menus", "SelectFilters", "Picker")</li>
+                    <li class="main">@Html.ActionLink("All Menus", "AllMenus", "Picker")</li>
+                    <li class="main">@Html.ActionLink("Acknowledgements", "Acknowledgements", "Home")</li>
+                </ul>
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign In</button>
+                        <button type="submit" class="btn btn-warning">Create Account</button>
+                    </form>
+
+                }
+                else
+                {
+                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { @class = "navbar-form navbar-right" }))
+                    {
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-success">Sign Out</button>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    <footer>
+        <p>
+            &copy; Eden Full, @DateTime.Now.Year.<br />
+            The DHall Picker does not guarantee that all dishes in the filtered menu exactly meet your criteria. Please use common sense!<br />
+            Questions? Feedback? Drop me a line at efull&#64;.
+        </p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("ViewScripts", false)
+    @RenderSection("Scripts", false)
+
+</body>
+</html>

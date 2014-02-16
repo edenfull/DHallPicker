@@ -1,0 +1,5 @@
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Models\bin\Debug\DHallPicker.Models.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Models\bin\Debug\DHallPicker.Models.pdb
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Models\obj\Debug\DHallPicker.Models.dll
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Models\obj\Debug\DHallPicker.Models.pdb
+C:\Users\efull\Documents\Visual Studio 2012\Projects\DHallPicker\DHallPicker.Models\obj\Debug\DHallPicker.Models.csprojResolveAssemblyReference.cache

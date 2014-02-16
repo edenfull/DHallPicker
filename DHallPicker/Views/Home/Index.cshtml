@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "DHall Picker";
+}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Optimize your Princeton experience.</h1>
+        <p>The DHall Picker tells you which residential college dining hall you should eat at every day.</p>
+        <p>@Html.ActionLink("GO", "SelectFilters", "Picker", null, new { @class = "btn btn-primary btn-lg" })</p>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="meal">Hi! I'm <a href="http://www.edenfull.ca">Eden Full '15</a> and I'm on a mission to make my college experience awesome.</h2>
+    <br/>
+    <br/>
+    <div class="col-lg-4">
+        <h4>What's the story?</h4>
+        In preparation for my return to college after <a href="http://paw.princeton.edu/issues/2013/03/06/pages/3212/index.xml">taking time off</a>, 
+        I apprenticed at the <a href="http://www.swcguild.com">Software Craftsmanship Guild</a> to learn software development. I built this as one 
+        of my capstone projects at the end of 9 weeks of learning how to code.<br />
+        <br />
+
+        Princeton undergraduate students normally have to use <a href="http://facilities.princeton.edu/dining/_Foodpro/location.asp">this site</a>
+        to find the menus for each dining hall. The DHall picker puts all the menus on one page so you can compare different dining halls easily, 
+        while also filtering out the things you don't like.
+    </div>
+    <div class="col-lg-4">
+        <h4>How did you build this?</h4>
+        The DHall Picker is proudly built using the .NET framework. <br/><br/>
+        
+        This summer through the Guild and my own self-studies, I learned C#, ASP.NET MVC4, JavaScript, HTML/CSS/jQuery, SQL, object-relational mappers 
+        (Entity Framework, Dapper, ADO.NET) and how to apply this knowledge using programming best practices.
+    </div>
+    <div class="col-lg-4">
+        <h4>Future Functionality</h4>
+        When I have some time later, I'd love to be able to add the following features:
+        <ul class="acknowledgements">
+            <li>Allow users to create custom filters</li>
+            <li>Incorporate a recommendation algorithm also based on favourite foods</li>
+        </ul>
+        <br/>
+    </div>
+</div>
